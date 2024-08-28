@@ -7,7 +7,7 @@ document.addEventListener("DOMContentLoaded", function() {
 
     // Set couple names from URL parameter or use default
     const coupleNames = getQueryParameter('couple');
-    document.getElementById('coupleNames').textContent = coupleNames || 'Gugun & Retno'; // Default names
+    document.getElementById('coupleNames').textContent = coupleNames || 'Hafis & Retno'; // Default names
 
     // Set guest name from URL parameter or use default
     const guestName = getQueryParameter('guest');
