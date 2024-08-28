@@ -95,8 +95,9 @@ calculateCountdown();
 
 
 // Function to copy account details
-function copyAccountDetails() {
-    const accountDetails = document.querySelector('.bank-number').innerText;
+function copyAccountDetails(event) {
+    const button = event.target; // Get the clicked button
+    const accountDetails = button.previousElementSibling.innerText; // Get the account number
     navigator.clipboard.writeText(accountDetails)
         .then(() => {
             alert('Account details copied!');
@@ -106,9 +107,11 @@ function copyAccountDetails() {
         });
 }
 
-// Attach event listener to the copy button
-const copyButton = document.getElementById('copyButton');
-copyButton.addEventListener('click', copyAccountDetails);
+// Attach event listener to all copy buttons
+const copyButtons = document.querySelectorAll('.copyButton');
+copyButtons.forEach(button => {
+    button.addEventListener('click', copyAccountDetails);
+});
 
     // function to show animation 
     const observerOptions = {
