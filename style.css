@@ -563,9 +563,9 @@ button:hover {
     text-align: center;
     background-color: #44442C;
     color: white;
-    max-width: 600px;
-    margin: 0 auto;
-    line-height:1;
+    margin: 0;
+    padding: 0 350px;
+    line-height: 1;
 }
 
 .thank-you h2 {
@@ -597,7 +597,9 @@ button:hover {
 
 /* ...........SECTION 9............. */
 #section9 {
-    background-color: #44442C;
+    background-image: url('background2.jpeg');
+    background-position: center;
+    background-size: cover;
     font-family: "Old Standard TT", serif;
     font-weight: 400;
     font-style: normal;
@@ -854,8 +856,10 @@ button:hover {
         background-image: url('background.jpeg');
     }
     .thank-you {
-        max-width: auto;
-        margin: 0 auto;
+        padding: 10px 20px;
         line-height: 1;
+    }
+        #section9 {
+        background-image: url('background.jpeg');
     }
 }
