@@ -518,14 +518,19 @@ nav ul li a:hover {
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    height: auto;
+    gap: 50px;
+    padding: 30px;
+    overflow-y: hidden;
 }
 
 .bank-container {
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
-    align-items: flex-end;
+    justify-content: center;
+    align-items: center;
     padding: 10px;
+    gap: 50px;
 }
 
 .gift-details {
@@ -538,7 +543,20 @@ nav ul li a:hover {
     margin: 10px 0;
 }
 
-.bank-logo {
+.bank-item {
+    background-color: rgba(126, 127, 82, 0.2);
+    border-radius: 20px;
+    padding: 20px;
+    min-width: 200px;
+    min-height: 180px;
+}
+
+.bank-logo1 {
+    width: 200px;
+    height: auto;
+}
+
+.bank-logo2 {
     width: 120px;
     height: auto;
 }
@@ -558,13 +576,22 @@ button:hover {
     color: black;
 }
 
+/* THANK-YOU SECTION */
 .thank-you {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-end;
+    background-image: url('cover1.jpeg');
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
     text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
     text-align: center;
     background-color: #44442C;
-    color: white;
+    color: black;
     margin: 0;
-    padding: 0 350px;
+    padding: 50px 20px;
     line-height: 1;
 }
 
@@ -572,7 +599,9 @@ button:hover {
     font-family: "Updock", cursive;
     font-weight: 700;
     font-style: normal;
-    font-size:3.2em;
+    font-size: 3.2em;
+    margin-bottom: 60px;
+    color: black;
 }
 
 .thank-you p {
@@ -588,6 +617,7 @@ button:hover {
     font-style: normal;
     font-size:3.2em;
 }
+
 #section8 p {
     font-family: "Old Standard TT", serif;
     font-weight: 400;
@@ -595,51 +625,39 @@ button:hover {
     font-size: 1em;
 }
 
-/* ...........SECTION 9............. */
-#section9 {
-    background-image: url('background2.jpeg');
-    background-position: center;
-    background-size: cover;
-    font-family: "Old Standard TT", serif;
-    font-weight: 400;
-    font-style: normal;
-    text-align: center;
-    display:flex;
-    flex-direction: column;
+/* Footer */
+footer {
+    background-color: #f4f4f4;
+    padding-bottom: 50px;
+    padding-top: 15px;
+}
+  
+.footer-container {
+    display: flex;
+    justify-content: space-between;
     align-items: center;
-    justify-items: center;
-    justify-content: center;
-    padding-bottom:10%;
+    margin: 0 auto;
+    padding: 0 20px;
 }
-
-.brand-logo img {
-    max-width: 300px;
-    margin-bottom: 20px;
-    margin-top:20px;
-    display:flex;
-    flex-direction: column;
-    align-items: center;
-    justify-items: center;
-    justify-content: center;
-    background-color: #D1DCD8;
+  
+.logo img {
+    height: 40px;
 }
-
-.social-media {
-    margin-top: 20px;
+  
+.social-media-ncp {
+    display: flex;
 }
-
-.social-media a {
-    display: inline-block;
-    margin: 0 10px;
-    background-color: rgba(126, 127, 82, 0.6);
-    border-radius: 10px;
-    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.7);
-}
-
-.social-media img {
-    width: 40px; /* Adjust size as needed */
-    height: auto;
-}
+  
+  .social-icon {
+    color: var(--secondary-color); /* Warna ikon */
+    font-size: 24px; /* Ukuran ikon */
+    margin-left: 15px; /* Jarak antar ikon */
+    text-decoration: none; /* Menghilangkan garis bawah */
+  }
+  
+  .social-icon:hover {
+    color: var(--primary-color); /* Warna saat hover */
+  }
 
 
 /* ...............  ANIMATION............... */
@@ -666,8 +684,8 @@ button:hover {
 /* .....................AUDIO CONTROL.................... */
 .audio-controls {
     position: fixed;
-    bottom: 50px;
-    right: 20px;
+    top: 20px;
+    left: 20px;
     z-index: 999; /* Ensure it's above other content */
     text-align: center;
     display: none; /* Initially hide the button */
@@ -825,9 +843,10 @@ button:hover {
     }
 
     /* SECTION 4 */
-     #section4 {
+    #section4 {
         background-image: url('background.jpeg');
     }
+
     .profile-container {
         flex-direction: column;
     }
@@ -843,9 +862,10 @@ button:hover {
         width: 80%; /* Adjust width as needed */
     }
     /* SECTION 6 */
-     #section6 {
+    #section6 {
         background-image: url('background.jpeg');
     }
+
     .gallery {
         grid-template-columns: repeat(2, 1fr);
         grid-template-rows: auto;
@@ -858,5 +878,14 @@ button:hover {
     .thank-you {
         padding: 10px 20px;
         line-height: 1;
+    }
+
+    .bank-container {
+        flex-direction: column;
+    }
+
+    /* SECTION 9 */
+    #section9 {
+        background-image: url('background.jpeg');
     }
 }
